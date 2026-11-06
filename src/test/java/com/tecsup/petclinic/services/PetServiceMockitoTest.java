@@ -197,8 +197,8 @@ public class PetServiceMockitoTest {
 
         //            EXPECTED           ACTUAL
         assertEquals(UP_PET_NAME, petDTOUpdate.getName());
-        assertEquals(UP_OWNER_ID, petDTOUpdate.getTypeId());
-        assertEquals(UP_TYPE_ID, petDTOUpdate.getOwnerId());
+        assertEquals(UP_OWNER_ID, petDTOUpdate.getOwnerId());
+        assertEquals(UP_TYPE_ID, petDTOUpdate.getTypeId());
     }
 
     /**
