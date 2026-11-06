@@ -1,0 +1,7 @@
+Extracto textual del registro ejecucion.txt (sin alterar los valores):
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.977 s -- in com.tecsup.petclinic.services.VetSpecialtyServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  8.110 s
+[INFO] Finished at: 2026-11-06T22:07:46Z
+Codigo de salida: 0

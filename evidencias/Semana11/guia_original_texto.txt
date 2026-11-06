@@ -1,0 +1,213 @@
+PARTE: word/document.xml
+Construcción y Pruebas de Software4 C24Construcción y Pruebas de Software4 C241111Pruebas Unitarias con Base de DatosPruebas Unitarias con Base de DatosClaudio Olanda SaavedraClaudio Olanda Saavedra
+Construcción y Pruebas de Software
+4 C24
+Construcción y Pruebas de Software
+4 C24
+11
+11
+Pruebas Unitarias con Base de Datos
+Pruebas Unitarias con Base de Datos
+Claudio Olanda Saavedra
+Claudio Olanda Saavedra
+CONSTRUCCIÓN Y PRUEBAS DE SOFTWARE : Pruebas Unitarias con Base de Datos
+
+
+Capacidades
+Realizar una aplicación con conexión a base de datos.
+Creación de Test Case para base de datos.
+Ejecución de pruebas unitarias desde la consola de windows
+
+Seguridad
+En este laboratorio está prohibida la manipulación del hardware, conexiones eléctricas o de red. Así como la ingesta de alimentos y bebidas. 
+Ubicar maletines y/o mochilas en lugar destinado para tal fin.
+Dejar la mesa de trabajo y la silla utilizada limpias y ordenadas.
+
+Fundamento teórico
+Revise el material de la semana correspondiente antes del desarrollo del laboratorio.
+
+Normas empleadas
+No aplica
+
+Recursos
+En este laboratorio, cada estudiante trabajará con una computadora..
+
+Metodología para el desarrollo de la tarea
+El desarrollo del laboratorio es en grupo de estudiantes de acuerdo al proyecto integrador.
+
+
+VII.- INTRODUCCIÓN: 
+
+En los proyectos de software es importante la calidad del software, la fase de testing es la que nos va a permitir controlar la calidad del software. Como primer paso de acuerdo al modelo agil de testing las pruebas unitarias deberán ser realizadas, en el presente laboratorio se dan las pautas para desarrollar pruebas unitarias con conexión a base de datos
+
+
+VII.- PROCEDIMIENTO: 
+
+Basado en las pruebas unitarias de la clase PetServiceTest  del proyecto :
+
+ https://github.com/jgomezz/petclinic_test
+
+
+CASO 1 :
+Deberá realizar la pruebas unitarias de la tabla vets en la clase VetServiceTest en la aplicación peticlinic_test , es decir las pruebas unitarias de creación, actualización, búsqueda y eliminación de veterinarios. Todo esto deberá realizarse en coordinación con su equipo de trabajo usando Git
+
+CASO 2 :
+Deberá realizar la pruebas unitarias de la tabla owners en la clase OwnerServiceTest en la aplicación peticlinic_test , es decir las pruebas unitarias de creación, actualización, búsqueda y eliminación de dueños. Todo esto deberá realizarse en coordinación con su equipo de trabajo usando Git
+
+
+
+CASO 3 :
+Deberá realizar la pruebas unitarias de la tabla specialities en la clase SpecialityServiceTest en la aplicación peticlinic_test , es decir las pruebas unitarias de creación, actualización, búsqueda y eliminación de especialidades. Todo esto deberá realizarse en coordinación con su equipo de trabajo usando Git
+
+CASO 4 :
+Deberá realizar la pruebas unitarias de la tabla visits, en la clase VisitServiceTest en la que aplicación peticlinic_test , es decir las pruebas unitarias de creación, actualización, búsqueda y eliminación de visitas. Todo esto deberá realizarse en coordinación con su equipo de trabajo usando Git
+
+CASO 5:
+Deberá realizar las pruebas unitarias de la tabla types en la clase TypeServiceTest (o PetTypeServiceTest) en la aplicación petclinic_test, es decir las pruebas unitarias de creación, actualización, búsqueda y eliminación de tipos de mascotas (Type). Todo esto deberá realizarse en coordinación con su equipo de trabajo usando Git.
+
+CASO 6:
+Deberá realizar las pruebas unitarias de la tabla vet_specialties en la clase VetSpecialtyServiceTest en la aplicación petclinic_test, es decir las pruebas unitarias de asignación de especialidades a veterinarios, búsqueda de especialidades por veterinario, búsqueda de veterinarios por especialidad, y eliminación de la relación veterinario-especialidad. Todo esto deberá realizarse en coordinación con su equipo de trabajo usando Git.
+
+
+Se deberá presentar las evidencias de las pruebas realizadas en el informe de laboratorio y la ruta del proyecto Git creado
+
+
+
+
+
+CONCLUSIONES
+
+Indicar las conclusiones que ha llegado después de desarrollar el laboratorio.
+
+1.
+
+
+2.
+
+
+3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Criterios de Evaluación
+
+
+
+
+Construcción y Pruebas de Software                          
+
+Rúbrica
+Resultado 
+
+Criterio de desempeño
+
+Curso
+Construcción y Pruebas de Software                          
+Periodo 
+ 
+Actividad
+Pruebas Unitarias con Base de Datos
+Semestre 
+IV
+Nombre del Alumno
+
+Semana
+11
+Docente
+Jaime Gómez
+Fecha
+
+Sección
+
+Criterios a Evaluar
+Excelente
+Bueno
+Requiere Mejora
+No Aceptable
+Puntaje Logrado
+Creación de Test Case para base de datos.
+7
+5
+3
+2-0
+
+Ejecución de pruebas unitarias en una aplicación web con Spring desde una consola de comandos
+6
+4
+3
+1-0
+
+Realizar pruebas unitarias para la tabla Departamentos
+7
+6
+4
+2-0
+
+Total
+20
+15
+10
+05
+
+
+
+Acciones a cumplir
+Menos
+Puntualidad y dedicación
+1
+Cumplimiento de tiempos establecidos
+1
+Conclusiones: ortografía y redacción.
+1
+Puntaje Total
+
+
+Comentarios respecto del desempeño del alumno
+
+
+
+
+
+
+
+
+Descripción
+Excelente
+Demuestra un completo entendimiento del problema o realiza la actividad cumpliendo todos los requerimientos especificados.
+Bueno
+Demuestra un considerable entendimiento del problema o realiza la actividad cumpliendo con la mayoría de los requerimientos especificados.
+Requiere Mejora
+Demuestra un bajo entendimiento del problema o realiza la actividad con pocos de los requerimientos especificados.
+No aceptable
+No demuestra entendimiento del problema o actividad.
+
+
+
+
+
+PARTE: word/footnotes.xml
+
+
+
+PARTE: word/endnotes.xml
+
+
+
+PARTE: word/header1.xml
+Construcción y Pruebas de Software                                                                                                               Pruebas Unitarias
+
+PARTE: word/footer1.xml
+
+Dpto. de  TD                                                                                                                                                  Pág. 1    

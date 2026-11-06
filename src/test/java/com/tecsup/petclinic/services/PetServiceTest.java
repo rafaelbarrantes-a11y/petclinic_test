@@ -12,6 +12,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@org.springframework.transaction.annotation.Transactional
 @SpringBootTest
 @Slf4j
 public class PetServiceTest {
@@ -147,8 +148,8 @@ public class PetServiceTest {
 
         //            EXPECTED        ACTUAL
         assertEquals(UP_PET_NAME, upgradePetDTO.getName());
-        assertEquals(UP_OWNER_ID, upgradePetDTO.getTypeId());
-        assertEquals(UP_TYPE_ID, upgradePetDTO.getOwnerId());
+        assertEquals(UP_OWNER_ID, upgradePetDTO.getOwnerId());
+        assertEquals(UP_TYPE_ID, upgradePetDTO.getTypeId());
     }
 
     /**

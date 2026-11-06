@@ -1,0 +1,15 @@
+* a286c63 Documenta S11 con informe Word, ejecuciones y reportes originales
+* 73d5462 Implementa los seis casos S11 con persistencia H2 y pruebas aisladas
+* 55d4206 Add files via upload
+* 04e591c update
+* c147b80 update
+* 65604e5 update
+* 5c7b692 status
+* 6bb6652 update
+* 249c784 update
+* 3e59958 update
+* f3b407f update
+* 9bb2cb6 update
+* 6b142bb update
+* 7452c9d update
+* def15cd update
