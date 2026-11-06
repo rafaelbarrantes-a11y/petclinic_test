@@ -862,7 +862,7 @@ Repositorio del estudiante: https://github.com/rafaelbarrantes-a11y/petclinic_te
 
 Rama: laboratorio-s11. Base solicitada: main. El repositorio del profesor jgomezz/petclinic_test no se modificó. No se fusionó la rama principal ni se simularon revisiones de compañeros.
 
-Pull Request: Pendiente de creación; consultar el estado final en README.md.
+Pull Request: https://github.com/rafaelbarrantes-a11y/petclinic_test/pull/1
 
 La historia real de commits se guarda en evidencias/Semana11/git-log.txt; los commits finales de documentación se consultan también en GitHub. La publicación por git push funciona. La CLI gh no puede consultar api.github.com desde este entorno; para la Pull Request se utiliza el conector GitHub autorizado.
 
@@ -911,7 +911,7 @@ La rúbrica menciona literalmente “Realizar pruebas unitarias para la tabla De
 | Registros originales y reportes Maven | Completo; carpeta evidencias/Semana11 |
 | Informe Word y código por caso | Completo; este documento y respaldo Markdown |
 | Git, commits y rama publicada | Completo; consultar GitHub |
-| Pull Request | Preparada; verificar estado final en README.md |
+| Pull Request | Creada: https://github.com/rafaelbarrantes-a11y/petclinic_test/pull/1 |
 | Capturas reales de código, ejecución y resultado | Pendientes; se entregan registros y pasos exactos, sin imágenes fabricadas |
 | Docente y sección de la portada | Completar según matrícula |
 | Interpretación de Departamentos en rúbrica | Aclaración pendiente del docente; diferencia documentada |

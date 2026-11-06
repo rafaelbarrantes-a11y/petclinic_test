@@ -10,4 +10,4 @@
 
 Capturas gráficas pendientes: consultar LEEME.md de cada caso. Registros y XML originales incluidos.
 
-PR: Pendiente de creación; consultar el estado final en README.md.
+PR: https://github.com/rafaelbarrantes-a11y/petclinic_test/pull/1

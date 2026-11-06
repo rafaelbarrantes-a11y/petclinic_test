@@ -37,3 +37,5 @@ La guía escribe `SpecialityServiceTest`, pero se conserva `SpecialtyServiceTest
 ### Trabajo con Git
 
 Esta rama conserva los commits reales del trabajo realizado para Rafael Barrantes Chayña. No se acreditan aportes de otros integrantes, resolución de conflictos, revisiones ni merges grupales que no ocurrieron. La rama principal y el repositorio del profesor se mantienen sin cambios.
+
+Pull Request creada hacia `main`: [PR #1 — Laboratorio S11](https://github.com/rafaelbarrantes-a11y/petclinic_test/pull/1). Incluye el código, el informe y las evidencias; permanece abierta para revisión.
