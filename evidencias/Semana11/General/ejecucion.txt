@@ -1,0 +1,386 @@
+Inicio UTC: 2026-11-06T22:07:46.271247+00:00
+Directorio: /workspace/petclinic_test
+JAVA_HOME=/workspace/.onboarding/jdk
+MAVEN_USER_HOME=/workspace/.m2
+$ ./mvnw -s /workspace/.onboarding/maven-settings.xml -B -ntp -Dmaven.repo.local=/workspace/.m2/repository -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts clean test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.tecsup:petclinic >------------------------
+[INFO] Building PetClinic 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ petclinic ---
+[INFO] Deleting /workspace/petclinic_test/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ petclinic ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ petclinic ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 33 source files with javac [debug parameters release 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ petclinic ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ petclinic ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.5:test (default-test) @ petclinic ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.tecsup.petclinic.PetClinicApplicationTests
+22:07:54.313 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tecsup.petclinic.PetClinicApplicationTests]: PetClinicApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:07:54.408 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.PetClinicApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-11-06T22:07:54.896Z  INFO 5420 --- [           main] c.t.petclinic.PetClinicApplicationTests  : Starting PetClinicApplicationTests using Java 21.0.9 with PID 5420 (started by agent in /workspace/petclinic_test)
+2026-11-06T22:07:54.897Z  INFO 5420 --- [           main] c.t.petclinic.PetClinicApplicationTests  : The following 1 profile is active: "h2"
+2026-11-06T22:07:55.698Z  INFO 5420 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-06T22:07:55.777Z  INFO 5420 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 7 JPA repository interfaces.
+2026-11-06T22:07:56.266Z  INFO 5420 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-06T22:07:56.299Z  INFO 5420 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-11-06T22:07:56.323Z  INFO 5420 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-06T22:07:56.549Z  INFO 5420 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-06T22:07:56.571Z  INFO 5420 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-06T22:07:56.706Z  INFO 5420 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-11-06T22:07:56.708Z  INFO 5420 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-06T22:07:56.725Z  WARN 5420 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-06T22:07:56.741Z  INFO 5420 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-06T22:07:57.437Z  INFO 5420 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-06T22:07:57.439Z  INFO 5420 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-06T22:07:57.908Z  INFO 5420 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-06T22:07:58.485Z  WARN 5420 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-06T22:07:59.021Z  INFO 5420 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2026-11-06T22:07:59.170Z  INFO 5420 --- [           main] c.t.petclinic.PetClinicApplicationTests  : Started PetClinicApplicationTests in 4.642 seconds (process running for 5.615)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/workspace/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.8/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.452 s -- in com.tecsup.petclinic.PetClinicApplicationTests
+[INFO] Running com.tecsup.petclinic.services.SpecialtyServiceTest
+2026-11-06T22:07:59.646Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.SpecialtyServiceTest]: SpecialtyServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:07:59.659Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.SpecialtyServiceTest
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: delete from specialties where id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: update specialties set h_close=?,h_open=?,name=?,office=? where id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s -- in com.tecsup.petclinic.services.SpecialtyServiceTest
+[INFO] Running com.tecsup.petclinic.services.PetServiceTest
+2026-11-06T22:07:59.910Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.PetServiceTest]: PetServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:07:59.911Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.PetServiceTest
+2026-11-06T22:07:59.921Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceTest    : >PetDTO(id=null, name=Bear, typeId=1, ownerId=1, birthDate=null)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+2026-11-06T22:07:59.945Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceTest    : >>PetDTO(id=14, name=Bear, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:07:59.946Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceTest    : >>>>PetDTO(id=14, name=Bear2, typeId=2, ownerId=2, birthDate=null)
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.name=?
+2026-11-06T22:08:00.023Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=1, name=Leo, typeId=1, ownerId=1, birthDate=2000-09-07)
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.owner_id=?
+2026-11-06T22:08:00.061Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=12, name=Lucky, typeId=2, ownerId=10, birthDate=2000-06-24)
+2026-11-06T22:08:00.061Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=13, name=Sly, typeId=1, ownerId=10, birthDate=2002-06-08)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+2026-11-06T22:08:00.069Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceTest    : PetDTO(id=null, name=Bird, typeId=1, ownerId=1, birthDate=null)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+2026-11-06T22:08:00.087Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceTest    : PET CREATED :PetDTO(id=16, name=Ponky, typeId=1, ownerId=1, birthDate=null)
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.type_id=?
+2026-11-06T22:08:00.102Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=9, name=Lucky, typeId=5, ownerId=7, birthDate=1999-08-06)
+2026-11-06T22:08:00.102Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=11, name=Freddy, typeId=5, ownerId=9, birthDate=2000-03-09)
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.197 s -- in com.tecsup.petclinic.services.PetServiceTest
+[INFO] Running com.tecsup.petclinic.services.OwnerServiceTest
+2026-11-06T22:08:00.112Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.OwnerServiceTest]: OwnerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:08:00.114Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.OwnerServiceTest
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: delete from owners where id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: update owners set address=?,city=?,first_name=?,last_name=?,telephone=? where id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s -- in com.tecsup.petclinic.services.OwnerServiceTest
+[INFO] Running com.tecsup.petclinic.services.TypeServiceTest
+2026-11-06T22:08:00.169Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.TypeServiceTest]: TypeServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:08:00.170Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.TypeServiceTest
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: update types set active=?,average_lifespan=?,care_level=?,description=?,name=?,size_category=? where id=?
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: delete from types where id=?
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+Hibernate: select t1_0.id,t1_0.active,t1_0.average_lifespan,t1_0.care_level,t1_0.description,t1_0.name,t1_0.size_category from types t1_0 where t1_0.id=?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in com.tecsup.petclinic.services.TypeServiceTest
+[INFO] Running com.tecsup.petclinic.services.PetServiceMockitoTest
+2026-11-06T22:08:00.219Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.PetServiceMockitoTest]: PetServiceMockitoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:08:00.247Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.PetServiceMockitoTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-11-06T22:08:00.273Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : Starting PetServiceMockitoTest using Java 21.0.9 with PID 5420 (started by agent in /workspace/petclinic_test)
+2026-11-06T22:08:00.273Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : The following 1 profile is active: "h2"
+2026-11-06T22:08:00.415Z  INFO 5420 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-06T22:08:00.460Z  INFO 5420 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 7 JPA repository interfaces.
+2026-11-06T22:08:00.981Z  INFO 5420 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-06T22:08:00.984Z  INFO 5420 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-06T22:08:00.998Z  INFO 5420 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-06T22:08:00.999Z  INFO 5420 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-06T22:08:01.000Z  INFO 5420 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-11-06T22:08:01.001Z  INFO 5420 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-06T22:08:01.002Z  WARN 5420 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-06T22:08:01.003Z  INFO 5420 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-06T22:08:01.163Z  INFO 5420 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-06T22:08:01.164Z  INFO 5420 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-06T22:08:01.375Z  WARN 5420 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-06T22:08:01.757Z  INFO 5420 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2026-11-06T22:08:01.866Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : Started PetServiceMockitoTest in 1.616 seconds (process running for 8.311)
+2026-11-06T22:08:01.900Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : PetDTO(id=4000, name=Bear, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:08:01.901Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : {}PetDTO(id=4000, name=Bear2, typeId=2, ownerId=2, birthDate=null)
+2026-11-06T22:08:01.909Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=1, name=Leo, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:08:01.950Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : Pet(id=1, name=Leo, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:08:01.950Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : PetDTO(id=1, name=Leo, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:08:01.957Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=12, name=Lucky, typeId=2, ownerId=10, birthDate=null)
+2026-11-06T22:08:01.957Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=13, name=Sly, typeId=1, ownerId=10, birthDate=null)
+2026-11-06T22:08:01.963Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : PetDTO(id=2000, name=Bird, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:08:01.971Z  INFO 5420 --- [           main] c.t.p.services.PetServiceMockitoTest     : Pet created : PetDTO(id=1000, name=Punky, typeId=1, ownerId=1, birthDate=null)
+2026-11-06T22:08:01.977Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=9, name=Lucky, typeId=5, ownerId=7, birthDate=null)
+2026-11-06T22:08:01.977Z  INFO 5420 --- [           main] c.t.petclinic.services.PetServiceImpl    : Pet(id=11, name=Freddy, typeId=5, ownerId=9, birthDate=null)
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.764 s -- in com.tecsup.petclinic.services.PetServiceMockitoTest
+[INFO] Running com.tecsup.petclinic.services.VisitServiceTest
+2026-11-06T22:08:01.988Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.VisitServiceTest]: VisitServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:08:01.990Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.VisitServiceTest
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into visits (cost,description,pet_id,vet_id,visit_date,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: delete from visits where id=?
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into visits (cost,description,pet_id,vet_id,visit_date,id) values (?,?,?,?,?,default)
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: update visits set cost=?,description=?,pet_id=?,vet_id=?,visit_date=? where id=?
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into visits (cost,description,pet_id,vet_id,visit_date,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: select p1_0.id,p1_0.birth_date,p1_0.name,p1_0.owner_id,p1_0.type_id from pets p1_0 where p1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into visits (cost,description,pet_id,vet_id,visit_date,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: insert into types (active,average_lifespan,care_level,description,name,size_category,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into pets (birth_date,name,owner_id,type_id,id) values (?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.cost,v1_0.description,v1_0.pet_id,v1_0.vet_id,v1_0.visit_date from visits v1_0 where v1_0.id=?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.175 s -- in com.tecsup.petclinic.services.VisitServiceTest
+[INFO] Running com.tecsup.petclinic.services.VetSpecialtyServiceTest
+2026-11-06T22:08:02.165Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.VetSpecialtyServiceTest]: VetSpecialtyServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:08:02.167Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.VetSpecialtyServiceTest
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vet_specialties vs1_0 join vets v1_0 on v1_0.id=vs1_0.vet_id where vs1_0.specialty_id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vet_specialties vs1_0 join vets v1_0 on v1_0.id=vs1_0.vet_id where vs1_0.specialty_id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vet_specialties vs1_0 join vets v1_0 on v1_0.id=vs1_0.vet_id where vs1_0.specialty_id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: select count(*) from vet_specialties where vet_id = ? and specialty_id = ?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from vet_specialties vs1_0 join specialties s1_0 on s1_0.id=vs1_0.specialty_id where vs1_0.vet_id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vet_specialties vs1_0 join vets v1_0 on v1_0.id=vs1_0.vet_id where vs1_0.specialty_id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: delete from vet_specialties where specialty_id=? and vet_id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: select count(*) from vet_specialties where vet_id = ? and specialty_id = ?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from vet_specialties vs1_0 join specialties s1_0 on s1_0.id=vs1_0.specialty_id where vs1_0.vet_id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vet_specialties vs1_0 join vets v1_0 on v1_0.id=vs1_0.vet_id where vs1_0.specialty_id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from vet_specialties vs1_0 join specialties s1_0 on s1_0.id=vs1_0.specialty_id where vs1_0.vet_id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from vet_specialties vs1_0 join specialties s1_0 on s1_0.id=vs1_0.specialty_id where vs1_0.vet_id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from vet_specialties vs1_0 join specialties s1_0 on s1_0.id=vs1_0.specialty_id where vs1_0.vet_id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: insert into specialties (h_close,h_open,name,office,id) values (?,?,?,?,default)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select s1_0.id,s1_0.h_close,s1_0.h_open,s1_0.name,s1_0.office from specialties s1_0 where s1_0.id=?
+Hibernate: select vs1_0.specialty_id,vs1_0.vet_id,vs1_0.certification_date,vs1_0.is_primary,vs1_0.notes,vs1_0.years_experience from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id) in ((?,?))
+Hibernate: insert into vet_specialties (certification_date,is_primary,notes,years_experience,specialty_id,vet_id) values (?,?,?,?,?,?)
+Hibernate: select count(*) from vet_specialties vs1_0 where (vs1_0.specialty_id,vs1_0.vet_id)=(?,?)
+Hibernate: select count(*) from vet_specialties where vet_id = ? and specialty_id = ?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.287 s -- in com.tecsup.petclinic.services.VetSpecialtyServiceTest
+[INFO] Running com.tecsup.petclinic.services.VetServiceTest
+2026-11-06T22:08:02.456Z  INFO 5420 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.tecsup.petclinic.services.VetServiceTest]: VetServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-06T22:08:02.457Z  INFO 5420 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.VetServiceTest
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: update vets set active=?,email=?,first_name=?,last_name=?,phone=? where id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: delete from vets where id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s -- in com.tecsup.petclinic.services.VetServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.876 s
+[INFO] Finished at: 2026-11-06T22:08:02Z
+[INFO] ------------------------------------------------------------------------
+
+Codigo de salida: 0

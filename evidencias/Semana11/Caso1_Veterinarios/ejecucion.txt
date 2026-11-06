@@ -1,0 +1,106 @@
+Inicio UTC: 2026-11-06T22:06:49.069220+00:00
+Directorio: /workspace/petclinic_test
+JAVA_HOME=/workspace/.onboarding/jdk
+MAVEN_USER_HOME=/workspace/.m2
+$ ./mvnw -s /workspace/.onboarding/maven-settings.xml -B -ntp -Dmaven.repo.local=/workspace/.m2/repository -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Dtest=VetServiceTest test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.tecsup:petclinic >------------------------
+[INFO] Building PetClinic 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ petclinic ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ petclinic ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ petclinic ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ petclinic ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 11 source files with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.5:test (default-test) @ petclinic ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.tecsup.petclinic.services.VetServiceTest
+22:06:54.467 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tecsup.petclinic.services.VetServiceTest]: VetServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:06:54.589 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tecsup.petclinic.PetClinicApplication for test class com.tecsup.petclinic.services.VetServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-11-06T22:06:55.214Z  INFO 3981 --- [           main] c.t.petclinic.services.VetServiceTest    : Starting VetServiceTest using Java 21.0.9 with PID 3981 (started by agent in /workspace/petclinic_test)
+2026-11-06T22:06:55.245Z  INFO 3981 --- [           main] c.t.petclinic.services.VetServiceTest    : The following 1 profile is active: "h2"
+2026-11-06T22:06:56.051Z  INFO 3981 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-06T22:06:56.107Z  INFO 3981 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 7 JPA repository interfaces.
+2026-11-06T22:06:56.532Z  INFO 3981 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-06T22:06:56.570Z  INFO 3981 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-11-06T22:06:56.596Z  INFO 3981 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-06T22:06:56.830Z  INFO 3981 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-06T22:06:56.864Z  INFO 3981 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-06T22:06:57.049Z  INFO 3981 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-11-06T22:06:57.051Z  INFO 3981 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-06T22:06:57.070Z  WARN 3981 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-06T22:06:57.087Z  INFO 3981 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-06T22:06:57.854Z  INFO 3981 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-06T22:06:57.857Z  INFO 3981 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-06T22:06:58.353Z  INFO 3981 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-06T22:06:58.923Z  WARN 3981 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-06T22:06:59.459Z  INFO 3981 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2026-11-06T22:06:59.603Z  INFO 3981 --- [           main] c.t.petclinic.services.VetServiceTest    : Started VetServiceTest in 4.88 seconds (process running for 5.834)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/workspace/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.8/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: update vets set active=?,email=?,first_name=?,last_name=?,phone=? where id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: delete from vets where id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+Hibernate: insert into vets (active,email,first_name,last_name,phone,id) values (?,?,?,?,?,default)
+Hibernate: select v1_0.id,v1_0.active,v1_0.email,v1_0.first_name,v1_0.last_name,v1_0.phone from vets v1_0 where v1_0.id=?
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.876 s -- in com.tecsup.petclinic.services.VetServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.874 s
+[INFO] Finished at: 2026-11-06T22:07:00Z
+[INFO] ------------------------------------------------------------------------
+
+Codigo de salida: 0

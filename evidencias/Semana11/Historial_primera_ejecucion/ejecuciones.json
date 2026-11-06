@@ -1,0 +1,114 @@
+[
+  {
+    "class": "VetServiceTest",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:05:23.973260+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "-Dtest=VetServiceTest",
+      "test"
+    ]
+  },
+  {
+    "class": "OwnerServiceTest",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:05:32.859865+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "-Dtest=OwnerServiceTest",
+      "test"
+    ]
+  },
+  {
+    "class": "SpecialtyServiceTest",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:05:41.979974+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "-Dtest=SpecialtyServiceTest",
+      "test"
+    ]
+  },
+  {
+    "class": "VisitServiceTest",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:05:51.200981+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "-Dtest=VisitServiceTest",
+      "test"
+    ]
+  },
+  {
+    "class": "TypeServiceTest",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:06:01.164258+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "-Dtest=TypeServiceTest",
+      "test"
+    ]
+  },
+  {
+    "class": "VetSpecialtyServiceTest",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:06:12.711452+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "-Dtest=VetSpecialtyServiceTest",
+      "test"
+    ]
+  },
+  {
+    "class": "ALL",
+    "exit_code": 0,
+    "started_utc": "2026-11-06T22:06:22.277043+00:00",
+    "command": [
+      "./mvnw",
+      "-s",
+      "/workspace/.onboarding/maven-settings.xml",
+      "-B",
+      "-ntp",
+      "-Dmaven.repo.local=/workspace/.m2/repository",
+      "-Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts",
+      "clean",
+      "test"
+    ]
+  }
+]
